@@ -14,11 +14,10 @@
  *  limitations under the License.
  */
 
-package com.google.firebase.samples.apps.mlkit.translate.kotlin
+package com.google.firebase.samples.apps.mlkit.translate
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.samples.apps.mlkit.translate.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, TranslateFragment.newInstance())
+                .replace(R.id.container,
+                    TranslateFragment.newInstance()
+                )
                 .commitNow()
         }
     }

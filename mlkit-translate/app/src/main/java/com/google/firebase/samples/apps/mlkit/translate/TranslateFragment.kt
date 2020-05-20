@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.google.firebase.samples.apps.mlkit.translate.kotlin
+package com.google.firebase.samples.apps.mlkit.translate
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -29,9 +29,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.google.firebase.samples.apps.mlkit.translate.R
 import com.google.firebase.samples.apps.mlkit.translate.databinding.TranslateFragmentBinding
-import com.google.firebase.samples.apps.mlkit.translate.kotlin.TranslateViewModel.Language
+import com.google.firebase.samples.apps.mlkit.translate.TranslateViewModel.Language
 
 class TranslateFragment : Fragment() {
 

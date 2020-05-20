@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.google.firebase.samples.apps.mlkit.translate.kotlin
+package com.google.firebase.samples.apps.mlkit.translate
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -30,7 +30,6 @@ import com.google.firebase.ml.naturallanguage.FirebaseNaturalLanguage
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslateLanguage
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslateRemoteModel
 import com.google.firebase.ml.naturallanguage.translate.FirebaseTranslatorOptions
-import com.google.firebase.samples.apps.mlkit.translate.R
 import java.util.Locale
 
 class TranslateViewModel(application: Application) : AndroidViewModel(application) {
@@ -44,7 +43,11 @@ class TranslateViewModel(application: Application) : AndroidViewModel(applicatio
 
     // Gets a list of all available translation languages.
     val availableLanguages: List<Language> = FirebaseTranslateLanguage.getAllLanguages()
-        .map { Language(FirebaseTranslateLanguage.languageCodeForLanguage(it)) }
+        .map {
+            Language(
+                FirebaseTranslateLanguage.languageCodeForLanguage(it)
+            )
+        }
 
     init {
         // Create a translation result or error object.
