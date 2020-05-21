@@ -15,11 +15,21 @@
   -->
 
 <resources>
-    <string name="app_name">ML Kit for Firebase - Translate</string>
+    <string name="app_name">Translate Standalone</string>
     <string name="translated_text_hint">Translated text</string>
     <string name="downloaded_models_label">Downloaded models: %1$s</string>
     <string name="translate_progress">Translating...</string>
     <string name="delete_model">Delete Model</string>
     <string name="download_model">Download Model</string>
     <string name="unknown_error">Unknown error occurred.</string>
+    <string name="app_desc">This plugin performs language translations for free text.</string>
+    <string name="text_to_translate">Enter text to Translate</string>
+    <string name="translated_text">Translated Text</string>
+    <string name="translate">Translate</string>
+    <string name="select_language">Select Language</string>
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+    </string-array>
 </resources>

@@ -103,7 +103,7 @@ class TranslateFragment : Fragment() {
                 }
             }
 
-            // Set up Switch Language Button
+            /*// Set up Switch Language Button
             buttonSwitchLang.setOnClickListener {
                 setProgressText(targetText)
                 val sourceLangPosition = sourceLangSelector.selectedItemPosition
@@ -111,8 +111,10 @@ class TranslateFragment : Fragment() {
                 targetLangSelector.setSelection(sourceLangPosition)
             }
 
+             */
+
             // Set up toggle buttons to delete or download remote models locally.
-            buttonSyncSource.setOnCheckedChangeListener { _, isChecked ->
+           /* buttonSyncSource.setOnCheckedChangeListener { _, isChecked ->
                 val language = adapter.getItem(sourceLangSelector.selectedItemPosition)
                 language?.let {
                     if (isChecked) {
@@ -132,6 +134,8 @@ class TranslateFragment : Fragment() {
                     }
                 }
             }
+
+            */
 
             // Translate input text as it is typed
             sourceText.addTextChangedListener(object : TextWatcher {
@@ -155,7 +159,7 @@ class TranslateFragment : Fragment() {
                 }
             })
 
-            // Update sync toggle button states based on downloaded models list.
+           /* // Update sync toggle button states based on downloaded models list.
             viewModel.availableModels.observe(viewLifecycleOwner, Observer { firebaseTranslateRemoteModels ->
                 val output = context!!.getString(
                         R.string.downloaded_models_label,
@@ -170,7 +174,7 @@ class TranslateFragment : Fragment() {
                             adapter.getItem(targetLangSelector.selectedItemPosition)!!.code
                     )
                 }
-            })
+            })*/
         }
     }
 

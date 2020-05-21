@@ -28,4 +28,10 @@
         <item name="iconGravity">textStart</item>
     </style>
 
+    <style name="unpaddedButton" parent="@android:style/Widget.Button">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+    </style>
+
 </resources>
